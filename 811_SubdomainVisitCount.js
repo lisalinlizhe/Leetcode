@@ -48,11 +48,7 @@ var subdomainVisits = function(cpdomains) {
 };
 
 
-
-
-
-
-//Tom
+Tom
 var processCpdomain = (cpdomain, visitsMap) => {
   const arr = cpdomain.split(' ');
   const count = parseInt(arr[0], 10);
