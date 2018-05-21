@@ -48,37 +48,37 @@ var subdomainVisits = function(cpdomains) {
 };
 
 
-Tom
-var processCpdomain = (cpdomain, visitsMap) => {
-  const arr = cpdomain.split(' ');
-  const count = parseInt(arr[0], 10);
-  const domainParts = arr[1].split('.')
-
-  let temp = domainParts.pop();
-  if (visitsMap[temp]) {
-    visitsMap[temp] += count;
-  } else {
-    visitsMap[temp] = count;
-  }
-
-  while(domainParts.length > 0) {
-    temp = domainParts.pop() + '.' + temp;
-    if (visitsMap[temp]) {
-      visitsMap[temp] += count;
-    } else {
-      visitsMap[temp] = count;
-    }
-  }
-}
-
-/**
- * @param {string[]} cpdomains
- * @return {string[]}
- */
-var subdomainVisits = function(cpdomains) {
-  var visitsMap = {};
-  for(var i = 0; i < cpdomains.length; i++) {
-    processCpdomain(cpdomains[i], visitsMap);
-  }
-  return Object.keys(visitsMap).map((key) => visitsMap[key] + ' ' + key);
-};
+// Tom
+// var processCpdomain = (cpdomain, visitsMap) => {
+//   const arr = cpdomain.split(' ');
+//   const count = parseInt(arr[0], 10);
+//   const domainParts = arr[1].split('.')
+//
+//   let temp = domainParts.pop();
+//   if (visitsMap[temp]) {
+//     visitsMap[temp] += count;
+//   } else {
+//     visitsMap[temp] = count;
+//   }
+//
+//   while(domainParts.length > 0) {
+//     temp = domainParts.pop() + '.' + temp;
+//     if (visitsMap[temp]) {
+//       visitsMap[temp] += count;
+//     } else {
+//       visitsMap[temp] = count;
+//     }
+//   }
+// }
+//
+// /**
+//  * @param {string[]} cpdomains
+//  * @return {string[]}
+//  */
+// var subdomainVisits = function(cpdomains) {
+//   var visitsMap = {};
+//   for(var i = 0; i < cpdomains.length; i++) {
+//     processCpdomain(cpdomains[i], visitsMap);
+//   }
+//   return Object.keys(visitsMap).map((key) => visitsMap[key] + ' ' + key);
+// };
