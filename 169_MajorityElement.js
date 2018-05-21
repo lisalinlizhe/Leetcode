@@ -2,7 +2,7 @@
  * Created by llin on 5/20/18.
  */
 
-//Javascript Asscosiate array!!!!!!!!!!!!!!!
+//Javascript Associate array!!!!!!!!!!!!!!!
 var majorityElement = function(nums) {
     var map = {};
     var max = 0;
