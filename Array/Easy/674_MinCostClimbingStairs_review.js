@@ -3,6 +3,7 @@
  */
 
 //Needs review - could not figure that out, directly copy from the discussion
+//This is a problem using DP.
 var minCostClimbingStairs = function(cost) {
     var len = cost.length;
     var minCost = cost;
