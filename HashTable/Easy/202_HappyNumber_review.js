@@ -16,10 +16,10 @@ var isHappy = function(n) {
     return true;
 };
 var getDigits = function(num){
-    var sum = 0
+    var sum = 0;
     while(num > 0) {
         sum += (num %10) * (num %10);
         num = parseInt(num /10);
     }
     return sum;
-}
+};
