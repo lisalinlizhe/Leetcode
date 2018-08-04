@@ -25,4 +25,4 @@ var checkValidString = function(s) {
     }
   }
   return true;
-}
+};
