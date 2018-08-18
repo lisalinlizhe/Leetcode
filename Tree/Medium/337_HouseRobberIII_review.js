@@ -1,6 +1,4 @@
-/**
- * Created by lizhelin on 18/8/17.
- */
+
 //Check the discussion.
 //think step by step. Step 1:
 var rob = function(root) {
