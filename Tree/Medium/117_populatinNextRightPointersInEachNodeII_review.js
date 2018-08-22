@@ -2,13 +2,13 @@
  * Created by llin on 8/22/18.
  */
 var connect = function(root) {
-    var head = root;
-    var prev = null
     var cur = root;
+    var prev = null;
+    var head = root;
 
-    while(cur !== null) {
+    while(cur !== null){
         while(cur !== null) {
-            if(cur.left !==null) {
+            if(cur.left !== null) {
                 if(prev !== null) prev.next = cur.left;
                 else head = cur.left;
 
@@ -24,6 +24,6 @@ var connect = function(root) {
         }
         cur = head;
         head = null;
-        prev = null
+        prev = null;
     }
 };
