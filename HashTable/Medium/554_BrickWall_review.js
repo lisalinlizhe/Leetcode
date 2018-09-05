@@ -20,4 +20,4 @@ var leastBricks = function(wall) {
     res = Math.min(res, wall.length - map[keys[k]]);
   }
   return res;
-};  
+};
