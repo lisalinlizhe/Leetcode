@@ -1,7 +1,7 @@
 /**
  * Created by lizhelin on 18/9/5.
  */
-*/
+
 var map = {};
 var encode = function(longUrl) {
   var time = Date.now.toString();
