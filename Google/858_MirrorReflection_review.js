@@ -2,21 +2,17 @@
  * Created by lizhelin on 18/9/9.
  */
 //?????
+//https://leetcode.com/problems/mirror-reflection/discuss/146336/Java-solution-with-an-easy-to-understand-explanation.
 var mirrorReflection = function(p, q) {
-  var i = 1;
-  while(i<=q){
-    if((i*p)%q==0){
-      var round = (i*p)/q;
-      if(round%2==1){
-        if(i%2==1){
-          return 1;
-        }else{
-          return 0;
-        }
-      }else{
-        return 2;
-      }
-    }
-    i++;
+  var m = q, n = p;
+  while(m % 2 === 0 && n % 2 === 0){
+    m /= 2;
+    n /= 2;
+  }
+
+  if(n % 2 === 0) return 2;
+  if(n % 2 === 1){
+    if(m % 2 === 0) return 0;
+    else return 1;
   }
 };
