@@ -4,7 +4,7 @@
 var findSecretWord = function(wordlist, master) {
   wordlist.sort();
   lst = [];
-  for (let i = 0; i < wordlist.length; ++i)
+  for (var i = 0; i < wordlist.length; ++i)
     lst.push(wordlist[i]);
   for (var i = 0; i < 10; ++i) {
     var r = master.guess(lst[0]);
