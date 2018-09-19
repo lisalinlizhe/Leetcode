@@ -1,6 +1,7 @@
 /**
  * Created by lizhelin on 18/9/9.
  */
+// pay attention to where we put the map (where we init the map!).
 var numberOfBoomerangs = function(points) {
   var res = 0;
   for(var i = 0; i < points.length; i++) {
